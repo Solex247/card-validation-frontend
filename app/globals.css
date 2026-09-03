@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 60% 50% at 50% -10%, rgba(201, 162, 39, 0.08), transparent),
+    #101215;
+}
+
+.emboss {
+  text-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.6),
+    0 -1px 0 rgba(255, 255, 255, 0.06);
+  letter-spacing: 0.08em;
+}
+
+.card-face {
+  background:
+    linear-gradient(155deg, #2E323C 0%, #23262E 55%, #1A1C21 100%);
+  box-shadow:
+    0 30px 60px -20px rgba(0, 0, 0, 0.65),
+    0 2px 0 rgba(255, 255, 255, 0.04) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+.chip {
+  background: linear-gradient(155deg, #E4C568 0%, #C9A227 45%, #8F7419 100%);
+}
+
+.magstripe {
+  background: repeating-linear-gradient(
+    180deg,
+    #0B0C0E,
+    #0B0C0E 2px,
+    #131519 2px,
+    #131519 4px
+  );
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #C9A227;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
