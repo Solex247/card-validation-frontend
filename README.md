@@ -3,6 +3,13 @@
 A one-page Next.js app that checks a card number against the deployed
 Luhn-validation API, styled as a live card mockup.
 
+
+**Live app:** https://card-validation-frontend.vercel.app
+**Backend API:** https://card-validation-assessment.onrender.com
+
+A one-page Next.js app that checks a card number against the deployed
+Luhn-validation API, styled as a live card mockup.
+
 ## Stack
 - Next.js 14 (App Router) + TypeScript
 - Tailwind CSS
